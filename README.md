@@ -26,3 +26,11 @@ edges: [
 ...  
 ]  
 }
+
+==========
+
+Reference:  
+http://d3js.org/  
+layout algorithm:  
+http://bost.ocks.org/mike/fisheye/  
+http://christophermanning.org/projects  
