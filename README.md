@@ -11,8 +11,8 @@ layout：layout algorithm
 {  
 object-uri: "",  
 nodes: [  
-{ id: "", type: "number/string/url/ImageUrl", value: "" },  
-{ id: "", type: "number/string/url/ImageUrl", value: "" },  
+{ id: "int or string, unique", type: "number/string/url/image-url", value: "", icon: "ImageUrl" },  
+{ id: "int or string, unique", type: "number/string/url/image-url", value: "", icon: "ImageUrl" },  
 ...  
 ],  
 relations: [  
