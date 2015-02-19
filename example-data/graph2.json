@@ -1,34 +1,34 @@
-{
-	object-uri: "http://a.com/object/00001",
-	nodes: [
-		{ id: "http://a.com/object/00001", type: "", value: "", icon: "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ id: "1", type: "number", value: "2013", icon: "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ id: "2", type: "number", value: "2014", icon: "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ id: "3", type: "number", value: "1314", icon: "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ id: "4", type: "number", value: "520", icon: "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ id: "5", type: "string", value: "Hello", icon: "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
-		{ id: "6", type: "string", value: "World", icon: "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
-		{ id: "7", type: "string", value: "gg, gl", icon: "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
-		{ id: "8", type: "string", value: "ƒ„∫√", icon: "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
-		{ id: "9", type: "string", value: " ¿ΩÁ", icon: "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
-		{ id: "10", type: "string", value: "≥˛¥«", icon: "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
+Ôªø{
+	"object-uri": "http://a.com/object/00001",
+	"nodes": [
+		{ "id": 0, "type": "", "value": "", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 1, "type": "number", "value": "2013", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 2, "type": "number", "value": "2014", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 3, "type": "number", "value": "1314", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 4, "type": "number", "value": "520", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 5, "type": "string", "value": "Hello", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 6, "type": "string", "value": "World", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 7, "type": "string", "value": "gg, gl", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 8, "type": "string", "value": "‰Ω†Â•Ω", "icon": "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
+		{ "id": 9, "type": "string", "value": "‰∏ñÁïå", "icon": "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
+		{ "id": 10, "type": "string", "value": "Ê•öËæû", "icon": "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" }
 	],
-	relations: [
-		{ url: "http://a.com/schema/hasChild", title: "◊”Ω⁄µ„", description: "◊”°≠°≠Ω⁄°≠°≠µ„°≠°≠898a0sd8f0-a8d90f80asf08a8df90a0sdf09ikv90zix90v8-=awiofkjpokzx90viojkofjklzxc89" },
-		{ url: "http://a.com/schema/hasFather", title: "∏∏Ω⁄µ„", description: "∏∏°≠°≠Ω⁄°≠°≠µ„°≠°≠14513451451345134514513451345143514514351515414543513451541351435145134513451345" },
-		{ url: "http://a.com/schema/ref", title: "“˝”√", description: "≤Œøº°≠°≠≤Œøº°≠°≠fasfasdfafdasdfadssssssssssfdadfasfadf;kljaksjdfa;lsdfjkljasdlfjljadfjl;asdjfklasd;fjlfj" },
-		{ url: "http://a.com/schema/link", title: "πÿ¡™", description: "" }
+	"relations": [
+		{ "url": "http://a.com/schema/hasChild", "title": "Â≠êËäÇÁÇπ", "description": "Â≠ê‚Ä¶‚Ä¶ËäÇ‚Ä¶‚Ä¶ÁÇπ‚Ä¶‚Ä¶898a0sd8f0-a8d90f80asf08a8df90a0sdf09ikv90zix90v8-=awiofkjpokzx90viojkofjklzxc89" },
+		{ "url": "http://a.com/schema/hasFather", "title": "Áà∂ËäÇÁÇπ", "description": "Áà∂‚Ä¶‚Ä¶ËäÇ‚Ä¶‚Ä¶ÁÇπ‚Ä¶‚Ä¶14513451451345134514513451345143514514351515414543513451541351435145134513451345" },
+		{ "url": "http://a.com/schema/ref", "title": "ÂºïÁî®", "description": "ÂèÇËÄÉ‚Ä¶‚Ä¶ÂèÇËÄÉ‚Ä¶‚Ä¶fasfasdfafdasdfadssssssssssfdadfasfadf;kljaksjdfa;lsdfjkljasdlfjljadfjl;asdjfklasd;fjlfj" },
+		{ "url": "http://a.com/schema/link", "title": "ÂÖ≥ËÅî", "description": "" }
 	],
-	edges: [
-		{ node1:"http://a.com/object/00001", relation: "http://a.com/schema/link", node2: "1" },
-		{ node1:"http://a.com/object/00001", relation: "http://a.com/schema/link", node2: "2" },
-		{ node1:"http://a.com/object/00001", relation: "http://a.com/schema/link", node2: "3" },
-		{ node1:"http://a.com/object/00001", relation: "http://a.com/schema/link", node2: "4" },
-		{ node1:"2", relation: "http://a.com/schema/link", node2: "5" },
-		{ node1:"2", relation: "http://a.com/schema/ref", node2: "6" },
-		{ node1:"3", relation: "http://a.com/schema/ref", node2: "7" },
-		{ node1:"3", relation: "http://a.com/schema/hasChild", node2: "8" },
-		{ node1:"3", relation: "http://a.com/schema/hasFather", node2: "9" },
-		{ node1:"7", relation: "http://a.com/schema/hasChild", node2: "10" }
+	"edges": [
+		{ "source":0, "relation": "http://a.com/schema/link", "target": 1 },
+		{ "source":0, "relation": "http://a.com/schema/link", "target": 2 },
+		{ "source":0, "relation": "http://a.com/schema/link", "target": 3 },
+		{ "source":0, "relation": "http://a.com/schema/link", "target": 4 },
+		{ "source":2, "relation": "http://a.com/schema/link", "target": 5 },
+		{ "source":2, "relation": "http://a.com/schema/ref", "target": 6 },
+		{ "source":3, "relation": "http://a.com/schema/ref", "target": 7 },
+		{ "source":3, "relation": "http://a.com/schema/hasChild", "target": 8 },
+		{ "source":3, "relation": "http://a.com/schema/hasFather", "target": 9 },
+		{ "source":7, "relation": "http://a.com/schema/hasChild", "target": 10 }
 	]
 }
