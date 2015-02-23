@@ -1,7 +1,7 @@
 ﻿{
 	"object-uri": "http://a.com/object/1234",
 	"nodes": [
-		{ "id": "http://a.com/object/1234", "type": "", "value": "", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": "0", "type": "", "value": "", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
 		{ "id": "1", "type": "number", "value": "2013", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
 		{ "id": "2", "type": "number", "value": "2014", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
 		{ "id": "3", "type": "string", "value": "Hello", "icon": "" },
@@ -26,17 +26,17 @@
 		{ "url": "http://a.com/schema/description", "title": "描述", "description": "" }
 	],
 	"edges": [
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/age", "target": "1" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/age", "target": "2" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/name", "target": "3" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/title", "target": "4" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/name", "target": "5" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/title", "target": "6" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/description", "target": "7" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/hasChild", "target": "8" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/hasFather", "target": "9" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/ref", "target": "10" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/image", "target": "11" },
-		{ "source":"http://a.com/object/1234", "relation": "http://a.com/schema/image", "target": "12" },
+		{ "source":"0", "relation": "http://a.com/schema/age", "target": "1" },
+		{ "source":"0", "relation": "http://a.com/schema/age", "target": "2" },
+		{ "source":"0", "relation": "http://a.com/schema/name", "target": "3" },
+		{ "source":"0", "relation": "http://a.com/schema/title", "target": "4" },
+		{ "source":"0", "relation": "http://a.com/schema/name", "target": "5" },
+		{ "source":"0", "relation": "http://a.com/schema/title", "target": "6" },
+		{ "source":"0", "relation": "http://a.com/schema/description", "target": "7" },
+		{ "source":"0", "relation": "http://a.com/schema/hasChild", "target": "8" },
+		{ "source":"0", "relation": "http://a.com/schema/hasFather", "target": "9" },
+		{ "source":"0", "relation": "http://a.com/schema/ref", "target": "10" },
+		{ "source":"0", "relation": "http://a.com/schema/image", "target": "11" },
+		{ "source":"0", "relation": "http://a.com/schema/image", "target": "12" },
 	]
 }
