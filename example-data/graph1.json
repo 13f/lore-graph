@@ -1,19 +1,19 @@
 ﻿{
 	"object-uri": "http://a.com/object/1234",
 	"nodes": [
-		{ "id": "0", "type": "", "value": "", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ "id": "1", "type": "number", "value": "2013", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ "id": "2", "type": "number", "value": "2014", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ "id": "3", "type": "string", "value": "Hello", "icon": "" },
-		{ "id": "4", "type": "string", "value": "World", "icon": "" },
-		{ "id": "5", "type": "string", "value": "你好", "icon": "" },
-		{ "id": "6", "type": "string", "value": "世界", "icon": "" },
-		{ "id": "7", "type": "string", "value": "楚辞。你好你好你好你好你好楚辞。楚辞世界世界世界世界世界世界世界世界世界。楚辞。楚辞楚辞。", "icon": "" },
-		{ "id": "8", "type": "object-url", "value": "http://a.com/object/1111", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
-		{ "id": "9", "type": "object-url", "value": "http://a.com/object/2222", "icon": "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
-		{ "id": "10", "type": "url", "value": "http://www.chuci.info", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
-		{ "id": "11", "type": "image-url", "value": "http://www.leivein.com/Resource/Images/logo.png", "icon": "" },
-		{ "id": "12", "type": "image-url", "value": "http://www.leivein.com/Resource/Images/3rd/qrcode_jun-v-qing_430x430.jpg", "icon": "" }
+		{ "id": 0, "type": "", "value": "", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 1, "type": "number", "value": "2013", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 2, "type": "number", "value": "2014", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 3, "type": "string", "value": "Hello", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 4, "type": "string", "value": "World", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 5, "type": "string", "value": "你好", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 6, "type": "string", "value": "世界", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 7, "type": "string", "value": "楚辞。你好你好你好你好你好楚辞。楚辞世界世界世界世界世界世界世界世界世界。楚辞。楚辞楚辞。", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 8, "type": "object-url", "value": "http://a.com/object/1111", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 9, "type": "object-url", "value": "http://a.com/object/2222", "icon": "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" },
+		{ "id": 10, "type": "url", "value": "http://www.chuci.info", "icon": "http://img3.douban.com/pics/douban-icons/favicon_24x24.png" },
+		{ "id": 11, "type": "image-url", "value": "http://www.leivein.com/Resource/Images/logo.png", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" },
+		{ "id": 12, "type": "image-url", "value": "http://www.leivein.com/Resource/Images/3rd/qrcode_jun-v-qing_430x430.jpg", "icon": "http://mat1.gtimg.com/app/opent/images/wiki/resource/weiboicon24.png" }
 	],
 	"relations": [
 		{ "url": "http://a.com/schema/hasChild", "title": "子节点", "description": "子……节……点……898a0sd8f0-a8d90f80asf08a8df90a0sdf09ikv90zix90v8-=awiofkjpokzx90viojkofjklzxc89" },
@@ -26,17 +26,17 @@
 		{ "url": "http://a.com/schema/description", "title": "描述", "description": "" }
 	],
 	"edges": [
-		{ "source":"0", "relation": "http://a.com/schema/age", "target": "1" },
-		{ "source":"0", "relation": "http://a.com/schema/age", "target": "2" },
-		{ "source":"0", "relation": "http://a.com/schema/name", "target": "3" },
-		{ "source":"0", "relation": "http://a.com/schema/title", "target": "4" },
-		{ "source":"0", "relation": "http://a.com/schema/name", "target": "5" },
-		{ "source":"0", "relation": "http://a.com/schema/title", "target": "6" },
-		{ "source":"0", "relation": "http://a.com/schema/description", "target": "7" },
-		{ "source":"0", "relation": "http://a.com/schema/hasChild", "target": "8" },
-		{ "source":"0", "relation": "http://a.com/schema/hasFather", "target": "9" },
-		{ "source":"0", "relation": "http://a.com/schema/ref", "target": "10" },
-		{ "source":"0", "relation": "http://a.com/schema/image", "target": "11" },
-		{ "source":"0", "relation": "http://a.com/schema/image", "target": "12" },
+		{ "source":0, "relation": "http://a.com/schema/age", "target": 1 },
+		{ "source":0, "relation": "http://a.com/schema/age", "target": 2 },
+		{ "source":0, "relation": "http://a.com/schema/name", "target": 3 },
+		{ "source":0, "relation": "http://a.com/schema/title", "target": 4 },
+		{ "source":0, "relation": "http://a.com/schema/name", "target": 5 },
+		{ "source":0, "relation": "http://a.com/schema/title", "target": 6 },
+		{ "source":0, "relation": "http://a.com/schema/description", "target": 7 },
+		{ "source":0, "relation": "http://a.com/schema/hasChild", "target": 8 },
+		{ "source":0, "relation": "http://a.com/schema/hasFather", "target": 9 },
+		{ "source":0, "relation": "http://a.com/schema/ref", "target": 10 },
+		{ "source":0, "relation": "http://a.com/schema/image", "target": 11 },
+		{ "source":0, "relation": "http://a.com/schema/image", "target": 12 }
 	]
 }
