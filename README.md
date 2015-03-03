@@ -4,8 +4,12 @@ lore-graph
 A graph layout based on d3js.
 
 **Params** when initialize:  
-api-uri：the url to get data, default type is json.  
-layout：layout algorithm  
+layout：layout algorithm (to do)  
+
+
+** how to use **
+see test1.html
+
 
 **json data structure:**  
 {  
