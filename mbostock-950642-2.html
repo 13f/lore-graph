@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh" class="">
+<head>
+	<meta charset="utf-8" />
+
+	<style>
+	.link {
+	  stroke: #ccc;
+	}
+
+	.node text {
+	  pointer-events: none;
+	  font: 10px sans-serif;
+	}
+	</style>
+</head>
+
+<body>
+<div>
+  <span>文件名：</span>
+  <input id="file" name="file" type="text"></input>
+  <button onclick="process();">PROCESS</button>
+</div>
+
+<!-- <script src="./lib/collections.js"></script> -->
+<script src="./lib/linq.js"></script>
+<script src="./lib/d3/d3.v3.js"></script>
+<script src="./lib/d3/d3-tip.js"></script>
+<script>
+
+var width = 960,
+    height = 500;
+
+// 将JSON中的数据解析出来，用于检索
+var dataNodes = [];
+var dataEdges = [];
+var dataRelations = [];
+
+document.getElementById("file").value = "graph1.json";
+
+function processNormalNodes(node){
+  var tmp = node.filter( function(d) { return d.type == null || d.type == "" } );
+  tmp.append("image")
+	  .attr("xlink:href", function(d) { return d.icon })
+      .attr("x", -8)
+      .attr("y", -8)
+      .attr("width", 16)
+      .attr("height", 16);
+  tmp.append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.value });
+}
+
+function processNumberNodes(node){
+  var tmp = node.filter( function(d) { return d.type == "number" } );
+  tmp.append("image")
+	  .attr("xlink:href", function(d) { return d.icon })
+	  .attr("x", -8)
+	  .attr("y", -8)
+	  .attr("width", 16)
+	  .attr("height", 16);
+  tmp.append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.value });
+}
+
+function processStringNodes(node){
+  var tmp = node.filter( function(d) { return d.type == "string" } );
+  tmp.append("image")
+	  .attr("xlink:href", function(d) { return d.icon })
+	  .attr("x", -8)
+	  .attr("y", -8)
+	  .attr("width", 16)
+	  .attr("height", 16);
+  tmp.append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.value });
+}
+
+function processUrlNodes(node){
+  var tmp = node.filter( function(d) { return d.type == "url" } );
+  tmp.append("a")
+	  .attr("xlink:href", function(d) { return d.value })
+	  .attr("target", "_new")
+	.append("image")
+	  .attr("xlink:href", function(d) { return d.icon })
+      .attr("x", -8)
+      .attr("y", -8)
+      .attr("width", 16)
+      .attr("height", 16);
+}
+
+function processImageNodes(node){
+  var tmp = node.filter( function(d) { return d.type == "image-url" } );
+  tmp.append("image")
+	  .attr("xlink:href", function(d) { return d.icon })
+      .attr("x", -8)
+      .attr("y", -8)
+      .attr("width", 16)
+      .attr("height", 16);
+}
+
+function processObjectNodes(node){
+  var tmp = node.filter( function(d) { return d.type == "object-url" } );
+  tmp.append("image")
+	  .attr("xlink:href", function(d) { return d.icon })
+      .attr("x", -8)
+      .attr("y", -8)
+      .attr("width", 16)
+      .attr("height", 16);
+  tmp.append("text")
+      .attr("dx", 12)
+      .attr("dy", ".35em")
+      .text(function(d) { return d.value });
+}
+
+
+var tip = d3.tip()
+  .attr('class', 'd3-tip')
+  .offset([-10, 0])
+  .html(function(d) { // 这里应该根据link/edge的relation进行检索，而不是直接使用某个属性
+	// 1
+    //return "<span style='color:gray'>" + d.relation + "</span>";
+	// 2
+	//var tmp = dataRelations.where( function(i){ return i.url == d.relation } ).first();
+	var tmp = dataRelations.first( function(i){ return i.url == d.relation } );
+	return "<span style='color:gray'>" + ( tmp == null ? "predicate(" + d.relation + ")" : tmp.title ) + "</span>";
+  })
+
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+
+svg.call(tip);
+
+var force = d3.layout.force()
+    .gravity(.05)
+    .distance(100)
+    .charge(-100)
+    .size([width, height]);
+
+// test 0: orginal source json data
+// test 1: 
+function process(){
+  var filename = document.getElementById("file").value;
+  d3.json("http://www.chuci.info/demo/lore-graph/example-data/" + filename, function(error, json) {
+  force
+      .nodes(json.nodes)
+      .links(json.edges)
+      .start();
+  
+  dataNodes = json.nodes;
+  dataEdges = json.edges;
+  dataRelations = json.relations;
+  
+  var link = svg.selectAll(".link")
+      .data(json.edges)
+	.enter()
+	  .append("line")
+      .attr("class", "link")
+	  .on('mouseover', tip.show)
+      .on('mouseout', tip.hide);
+
+  var node = svg.selectAll(".node")
+      .data(json.nodes)
+    .enter()
+	  .append("g")
+      .attr("class", "node")
+      .call(force.drag);
+	  
+  processNormalNodes(node);
+  processNumberNodes(node);
+  processStringNodes(node);
+  processImageNodes(node);
+  processUrlNodes(node);
+  processObjectNodes(node);
+
+  force.on("tick", function() {
+    link.attr("x1", function(d) { return d.source.x; })
+        .attr("y1", function(d) { return d.source.y; })
+        .attr("x2", function(d) { return d.target.x; })
+        .attr("y2", function(d) { return d.target.y; });
+
+	// add from visual-rdf.js
+	//link.attr("x", function(d) { return (d.source.x+d.target.x)/2; })
+    //    .attr("y", function(d) { return (d.source.y+d.target.y)/2; });
+	
+    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+	
+	// visual-rdf.js
+	//linkArrowhead.attr("points", function(d) {
+  	//  	  return [[d.target.x,d.target.y+10].join(","),
+  	//  	  	[d.target.x-3,d.target.y+16].join(","),
+  	//  	  [d.target.x+3,d.target.y+16].join(",")].join(" ");
+  	//  })
+  	//  .attr("transform",function(d) {
+  	//  	  angle = Math.atan2(d.target.y-d.source.y, d.target.x-d.source.x)*180/Math.PI + 90;
+  	//  	  return "rotate("+angle+", "+d.target.x+", "+d.target.y+")";
+  	//  });
+  }); // force.on(tick)
+  
+});
+}
+
+</script>
+
+</body>
+</html>
