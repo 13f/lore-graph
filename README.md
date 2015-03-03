@@ -7,8 +7,8 @@ A graph layout based on d3js.
 layout：layout algorithm (to do)  
 
 
-** how to use **
-see test1.html
+**how to use**  
+see test1.html  
 
 
 **json data structure:**  
