@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh" class="">
+<head>
+	<meta charset="utf-8" />
+
+	<style>
+	.link {
+	  stroke: #ccc;
+	}
+
+	.node text {
+	  pointer-events: none;
+	  font: 10px sans-serif;
+	}
+	</style>
+</head>
+
+<body>
+<div>
+  <span>文件名：</span>
+  <input id="file" name="file" type="text"></input>
+  <button onclick="process();">PROCESS</button>
+</div>
+<div id="graph"></div>
+
+<script src="./lib/jquery-1.8.2.js"></script>
+<!-- <script src="./lib/collections.js"></script> -->
+<script src="./lib/linq.js"></script>
+<script src="./lib/d3/d3.v3.js"></script>
+<script src="./lib/d3/d3-tip.js"></script>
+<script src="./lib/lore-graph.js"></script>
+<script>
+
+var params = {
+	svgContainer: "graph",
+	width: 960,
+	height: 600,
+};
+LoreGraph = $.extend(LoreGraph, params);
+LoreGraph.init();
+
+function process(){
+  var url = "http://www.chuci.info/demo/lore-graph/example-data/" + document.getElementById("file").value;
+  LoreGraph.process(url);
+}
+
+document.getElementById("file").value = "graph1.json";
+
+</script>
+
+</body>
+</html>
