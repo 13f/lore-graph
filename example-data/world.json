@@ -1,0 +1,239 @@
+{
+	"object_uri": "http://www.chuci.info/schema/world",
+	"nodes": [
+		{
+			"id": 0,
+			"type": "string",
+			"value": "有关世界的本体",
+			"icon": null
+		},
+		{
+			"id": 1,
+			"type": "string",
+			"value": "owl:Class/rdfs:Class",
+			"icon": null
+		},
+		{
+			"id": 2,
+			"type": "string",
+			"value": "rdf:Property",
+			"icon": null
+		},
+		{
+			"id": 3,
+			"type": "string",
+			"value": "owl:ObjectProperty",
+			"icon": null
+		},
+		{
+			"id": 4,
+			"type": "string",
+			"value": "世界",
+			"icon": null
+		},
+		{
+			"id": 5,
+			"type": "string",
+			"value": "小说",
+			"icon": null
+		},
+		{
+			"id": 6,
+			"type": "string",
+			"value": "电影",
+			"icon": null
+		},
+		{
+			"id": 7,
+			"type": "string",
+			"value": "电视剧",
+			"icon": null
+		},
+		{
+			"id": 8,
+			"type": "string",
+			"value": "动画",
+			"icon": null
+		},
+		{
+			"id": 9,
+			"type": "string",
+			"value": "漫画",
+			"icon": null
+		},
+		{
+			"id": 10,
+			"type": "string",
+			"value": "音乐",
+			"icon": null
+		},
+		{
+			"id": 11,
+			"type": "string",
+			"value": "游戏",
+			"icon": null
+		},
+		{
+			"id": 12,
+			"type": "string",
+			"value": "地图",
+			"icon": null
+		},
+		{
+			"id": 13,
+			"type": "string",
+			"value": "社区",
+			"icon": null
+		},
+		{
+			"id": 14,
+			"type": "string",
+			"value": "创建者/造物主",
+			"icon": null
+		}
+	],
+	"relations": [
+		{
+			"uri": "has",
+			"title": "has Classes",
+			"description": "owl:Class/rdfs:Class"
+		},
+		{
+			"uri": "has",
+			"title": "has Properties",
+			"description": "rdf:Property"
+		},
+		{
+			"uri": "has",
+			"title": "has ObjectProperties",
+			"description": "owl:ObjectProperty"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#World",
+			"title": "has Class",
+			"description": "http://www.chuci.info/schema/world#World"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#novel",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#novel"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#film",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#film"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#tvPlay",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#tvPlay"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#animation",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#animation"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#comic",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#comic"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#music",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#music"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#game",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#game"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#map",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#map"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#community",
+			"title": "has Property",
+			"description": "http://www.chuci.info/schema/world#community"
+		},
+		{
+			"uri": "http://www.chuci.info/schema/world#creator",
+			"title": "has ObjectProperty",
+			"description": "http://www.chuci.info/schema/world#creator"
+		}
+	],
+	"edges": [
+		{
+			"source": 0,
+			"target": 1,
+			"relation": "has"
+		},
+		{
+			"source": 0,
+			"target": 2,
+			"relation": "has"
+		},
+		{
+			"source": 0,
+			"target": 3,
+			"relation": "has"
+		},
+		{
+			"source": 1,
+			"target": 4,
+			"relation": "http://www.chuci.info/schema/world#World"
+		},
+		{
+			"source": 2,
+			"target": 5,
+			"relation": "http://www.chuci.info/schema/world#novel"
+		},
+		{
+			"source": 2,
+			"target": 6,
+			"relation": "http://www.chuci.info/schema/world#film"
+		},
+		{
+			"source": 2,
+			"target": 7,
+			"relation": "http://www.chuci.info/schema/world#tvPlay"
+		},
+		{
+			"source": 2,
+			"target": 8,
+			"relation": "http://www.chuci.info/schema/world#animation"
+		},
+		{
+			"source": 2,
+			"target": 9,
+			"relation": "http://www.chuci.info/schema/world#comic"
+		},
+		{
+			"source": 2,
+			"target": 10,
+			"relation": "http://www.chuci.info/schema/world#music"
+		},
+		{
+			"source": 2,
+			"target": 11,
+			"relation": "http://www.chuci.info/schema/world#game"
+		},
+		{
+			"source": 2,
+			"target": 12,
+			"relation": "http://www.chuci.info/schema/world#map"
+		},
+		{
+			"source": 2,
+			"target": 13,
+			"relation": "http://www.chuci.info/schema/world#community"
+		},
+		{
+			"source": 3,
+			"target": 14,
+			"relation": "http://www.chuci.info/schema/world#creator"
+		}
+	]
+}

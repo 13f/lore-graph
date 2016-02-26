@@ -14,10 +14,10 @@
 		{ "id": 10, "type": "string", "value": "楚辞", "icon": "http://www.sinaimg.cn/blog/developer/wiki/LOGO_24x24.png" }
 	],
 	"relations": [
-		{ "url": "http://a.com/schema/hasChild", "title": "子节点", "description": "子……节……点……898a0sd8f0-a8d90f80asf08a8df90a0sdf09ikv90zix90v8-=awiofkjpokzx90viojkofjklzxc89" },
-		{ "url": "http://a.com/schema/hasFather", "title": "父节点", "description": "父……节……点……14513451451345134514513451345143514514351515414543513451541351435145134513451345" },
-		{ "url": "http://a.com/schema/ref", "title": "引用", "description": "参考……参考……fasfasdfafdasdfadssssssssssfdadfasfadf;kljaksjdfa;lsdfjkljasdlfjljadfjl;asdjfklasd;fjlfj" },
-		{ "url": "http://a.com/schema/link", "title": "关联", "description": "" }
+		{ "uri": "http://a.com/schema/hasChild", "title": "子节点", "description": "子……节……点……898a0sd8f0-a8d90f80asf08a8df90a0sdf09ikv90zix90v8-=awiofkjpokzx90viojkofjklzxc89" },
+		{ "uri": "http://a.com/schema/hasFather", "title": "父节点", "description": "父……节……点……14513451451345134514513451345143514514351515414543513451541351435145134513451345" },
+		{ "uri": "http://a.com/schema/ref", "title": "引用", "description": "参考……参考……fasfasdfafdasdfadssssssssssfdadfasfadf;kljaksjdfa;lsdfjkljasdlfjljadfjl;asdjfklasd;fjlfj" },
+		{ "uri": "http://a.com/schema/link", "title": "关联", "description": "" }
 	],
 	"edges": [
 		{ "source":0, "relation": "http://a.com/schema/link", "target": 1 },
