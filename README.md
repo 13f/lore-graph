@@ -10,13 +10,19 @@ layout：layout algorithm (to do)
 **how to use**  
 see test1.html  
 
+**node types**  
+1. number  
+2. string  
+3. uri  
+4. image_uri
+5. object_uri
 
 **json data structure:**  
 {  
 object-uri: "",  
 nodes: [  
-{ id: "int or string, unique", type: "number/string/url/image-url", value: "", icon: "ImageUrl" },  
-{ id: "int or string, unique", type: "number/string/url/image-url", value: "", icon: "ImageUrl" },  
+{ id: "int or string, unique", type: "number/string/uri/image-uri/object_uri", value: "", icon: "ImageUrl" },  
+{ id: "int or string, unique", type: "number/string/uri/image-uri/object_uri", value: "", icon: "ImageUrl" },  
 ...  
 ],  
 relations: [  
